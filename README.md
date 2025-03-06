@@ -56,6 +56,25 @@ edge_path = r"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
 
 ---
 
+## ❗ Important: Windows Security Exclusion
+
+**🔴 You must add an exclusion in Windows Security to prevent issues!**
+
+### Steps to Exclude the Application Folder:
+1. Open **Windows Security**
+2. Navigate to **Virus & Threat Protection**
+3. Click on **Manage Settings**
+4. Scroll down to **Exclusions**
+5. Click **Add or Remove Exclusions**
+6. Select **Folder** and add your application's folder
+
+### ❓ Why is this Necessary?
+- Windows Security may **flag the PyInstaller-built executable** as a false positive.
+- If not excluded, the **application might not run properly** or could be **deleted automatically**.
+- This ensures smooth execution without interruptions from security scans.
+
+---
+
 ## 🏗️ Application Setup
 To create an executable application, use **PyInstaller**.
 
